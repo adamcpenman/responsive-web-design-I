@@ -252,17 +252,19 @@ footer {
         flex-direction: column-reverse;
     }
     .logo {
-        margin-right: 50px;
+        /* margin-right: 50px; */
+        margin: 0 auto;
     }
     .circle {
         display: none;
     }
     .left-header {
-        margin-left: 50px;
+        /* margin-left: 50px; */
+        margin: 0 auto;
     }
-    .first-content {
-        display: flex;
-    }
+  .text-content {
+      padding: 10px;
+      }
 }
 
 @media (max-width: 500px) {
@@ -289,11 +291,22 @@ footer {
 		flex-direction: column;
     }
 
-
-
-    .second-content {
+     .second-content {
         flex-direction: column;
     }
 }
 
-@media 
+header {
+    animation-name: slidein; 
+    animation-duration: 3s;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        }
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
