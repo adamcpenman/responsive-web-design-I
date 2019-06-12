@@ -332,8 +332,9 @@ nav {
 @media (min-width: 505px) {
     nav {
         flex-direction: row;
-        
-    }
+        justify-content: space-between;
+       
+         }
 }
 
 a {
@@ -343,8 +344,20 @@ a {
     padding: 10px;
     }
 
+@media (min-width: 505px) {
+    a {
+        border: none;
+       }
+}
+
 a:last-child {
     border-bottom: 1px solid grey;
+    }
+
+@media (min-width: 505px) {
+    a:last-child {
+        border: none;
+    }
 }
 
 .logo {
@@ -386,6 +399,14 @@ button {
     margin-bottom: 20px;
 }
 
+@media (min-width: 505px) {
+    .first-content {
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    }
+}
+
 .text-content {
     width: 90%;
     margin: 20px;
@@ -395,6 +416,15 @@ button {
     width: 90%;
    margin-left: 20px;
 }
+
+@media (min-width: 505px) {
+    .second-content {
+    display:flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    }
+}
+
 
 .contact {
     line-height: 1.5;
